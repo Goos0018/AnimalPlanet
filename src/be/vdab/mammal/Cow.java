@@ -6,9 +6,10 @@ public class Cow extends Mammal {
 
     private boolean hasHorns;
 
-    public Cow(boolean hasHorns) {
-        this.hasHorns = hasHorns;
+    public Cow(boolean canSwim, int numberOfLegs) {
+        super(canSwim, numberOfLegs);
     }
+
 
     public boolean isHasHorns() {
         return hasHorns;
