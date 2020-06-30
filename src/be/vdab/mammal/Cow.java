@@ -4,6 +4,17 @@ import be.vdab.Mammal;
 
 public class Cow extends Mammal {
 
-    public Cow() {
+    private boolean hasHorns;
+
+    public Cow(boolean hasHorns) {
+        this.hasHorns = hasHorns;
+    }
+
+    public boolean isHasHorns() {
+        return hasHorns;
+    }
+
+    public void setHasHorns(boolean hasHorns) {
+        this.hasHorns = hasHorns;
     }
 }
