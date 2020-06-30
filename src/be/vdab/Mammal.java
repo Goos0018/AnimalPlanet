@@ -1,9 +1,19 @@
 package be.vdab;
 
-public abstract class Mammal extends Animal {
+public abstract class Mammal extends Animal implements Breathable {
 
     private boolean canSwim;
     private int numberOfLegs;
+
+    public Mammal(boolean canSwim, int numberOfLegs) {
+        this.canSwim = canSwim;
+        this.numberOfLegs = numberOfLegs;
+    }
+
+    @Override
+    public void breathe() {
+        System.out.println("Mammal breathes go HU HU");
+    }
 
     public boolean isCanSwim() {
         return canSwim;
