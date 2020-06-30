@@ -1,4 +1,5 @@
 package be.vdab.zoo;
 
-public class Zoo {
+public abstract class Zoo {
+
 }
