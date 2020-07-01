@@ -55,7 +55,7 @@ public class ProtozoaZoo extends Zoo {
     }
 
     @Override
-    public void printAnimal() {
+    public void printAllZooAnimals() {
 
     }
 }

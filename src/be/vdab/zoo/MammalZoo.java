@@ -74,8 +74,18 @@ public class MammalZoo extends Zoo {
     }
 
     @Override
-    public void printAnimal() {
-
+    public void printAllZooAnimals() {
+        System.out.println();
+        System.out.println("Our mammalzoo inhabits the following mammals:");
+        for (int i = 0; i < tigers.length; i++) {
+            System.out.println("Species: Tiger"  + ";  name: " + tigers[i].getName() + ";  sex: " + tigers[i].getSex() + ";  weight: " + tigers[i].getWeight());
+        }
+        for (int i = 0; i < monkeys.length; i++) {
+            System.out.println("Species: Monkey"  + ";  name: " + monkeys[i].getName() + ";  sex: " + monkeys[i].getSex() + ";  weight: " + monkeys[i].getWeight());
+        }
+        for (int i = 0; i < cows.length; i++) {
+            System.out.println("Species: Cow"  + ";  name: " + cows[i].getName() + ";  sex: " + cows[i].getSex() + ";  weight: " + cows[i].getWeight());
+        }
     }
 
 }
