@@ -56,6 +56,12 @@ public class ProtozoaZoo extends Zoo {
 
     @Override
     public void printAllZooAnimals() {
-
+        System.out.println("Our protozoazoo inhabits the following protozoa:");
+        for (int i = 0; i < amoebas.length; i++) {
+            System.out.println("Species: Amoeba" + ";  name: " + amoebas[i].getName() + ";  sex: " + amoebas[i].getSex() + ";  weight: " + amoebas[i].getWeight());
+        }
+        for (int i = 0; i < malarias.length; i++) {
+            System.out.println("Species: Malaria" + ";  name: " + malarias[i].getName() + ";  sex: " + malarias[i].getSex() + ";  weight: " + malarias[i].getWeight());
+        }
     }
 }
