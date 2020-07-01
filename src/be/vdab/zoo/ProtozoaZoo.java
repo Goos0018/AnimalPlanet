@@ -10,9 +10,9 @@ public class ProtozoaZoo extends Zoo {
     Amoeba[] amoebas;
     Malaria[] malarias;
 
-    public ProtozoaZoo(Amoeba[] amoebas, Malaria[] malarias) {
-        this.amoebas = amoebas;
-        this.malarias = malarias;
+    public ProtozoaZoo() {
+        amoebas = new Amoeba[0];
+        malarias = new Malaria[0];
     }
 
     public Amoeba[] getAmoebas() {
@@ -52,5 +52,10 @@ public class ProtozoaZoo extends Zoo {
             result[result.length - 1] = (Malaria) animal;
             malarias = result;
         }
+    }
+
+    @Override
+    public void printAnimal() {
+
     }
 }

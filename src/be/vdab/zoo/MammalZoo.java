@@ -8,14 +8,14 @@ import be.vdab.mammal.Tiger;
 
 public class MammalZoo extends Zoo {
 
-    Cow[] cows;
-    Monkey[] monkeys;
-    Tiger[] tigers;
+    private Cow[] cows;
+    private Monkey[] monkeys;
+    private Tiger[] tigers;
 
-    public MammalZoo(Cow[] cows, Monkey[] monkeys, Tiger[] tigers) {
-        this.cows = cows;
-        this.monkeys = monkeys;
-        this.tigers = tigers;
+    public MammalZoo() {
+        cows = new Cow[0];
+        monkeys = new Monkey[0];
+        tigers = new Tiger[0];
     }
 
     public Cow[] getCows() {
@@ -72,4 +72,10 @@ public class MammalZoo extends Zoo {
             tigers = result;
         }
     }
+
+    @Override
+    public void printAnimal() {
+
+    }
+
 }

@@ -45,7 +45,7 @@ public class BirdZoo extends Zoo {
     @Override
     public void addAnimal(Animal animal) {
         if (!(animal instanceof Bird)) {
-            System.out.println("this is not a bird");
+            System.out.println(animal.getName() + " is not a bird, it doesn't belong here.");
             return;
         } else if (animal instanceof Cockatiel) {
             Cockatiel[] result = new Cockatiel[cockatiels.length + 1];
@@ -70,6 +70,14 @@ public class BirdZoo extends Zoo {
             }
             result[result.length - 1] = (Eagle) animal;
             eagles = result;
+        }
+    }
+
+    @Override
+    public void printAnimal() {
+        System.out.println("Our birdzoo inhabits the following birds:");
+        for (int i = 0; i < cockatiels.length; i++) {
+            System.out.println("Species: Cockatiel"  + "  name: " + cockatiels[i].getName() + "  sex: " + cockatiels[i].getSex() + "  weight: " + cockatiels[i].getWeight());
         }
     }
 }
