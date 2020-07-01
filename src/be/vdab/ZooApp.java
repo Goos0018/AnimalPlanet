@@ -4,6 +4,7 @@ import be.vdab.bird.Cockatiel;
 import be.vdab.bird.Eagle;
 import be.vdab.bird.Owl;
 import be.vdab.mammal.Cow;
+import be.vdab.mammal.Dog;
 import be.vdab.mammal.Tiger;
 import be.vdab.zoo.BirdZoo;
 import be.vdab.zoo.MammalZoo;
@@ -32,6 +33,7 @@ public class ZooApp {
         bella.setHasHorns(true);
         bella.setName("Bella");
         tigres.setName("Tigres");
+        tigres.setDiet(Animal.Diet.CARNIVORE);
 
         // Add created animals to correct zoo
         paradisio.addAnimal(parkiet);
@@ -43,5 +45,11 @@ public class ZooApp {
         //print all the animals in the zoo
         paradisio.printAllZooAnimals();
         plankendael.printAllZooAnimals();
+
+        Dog fifi = new Dog();
+        System.out.println(fifi.react(Dog.Commands.BEG));
+        System.out.println(fifi.react(Dog.Commands.CHASE));
+        System.out.println(fifi.react(Dog.Commands.SPEAK));
+
     }
 }

@@ -6,7 +6,7 @@ public abstract class Animal {
     private double weight;
     private String sex;
     private int age;
-    private String diet;
+    private Diet diet;
 
     public enum Diet {
         CARNIVORE,
@@ -46,11 +46,11 @@ public abstract class Animal {
         this.age = age;
     }
 
-    public String getDiet() {
+    public Diet getDiet() {
         return diet;
     }
 
-    public void setDiet(String diet) {
+    public void setDiet(Diet diet) {
         this.diet = diet;
     }
 }

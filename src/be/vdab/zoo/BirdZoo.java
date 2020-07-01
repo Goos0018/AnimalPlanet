@@ -75,7 +75,6 @@ public class BirdZoo extends Zoo {
 
     @Override
     public void printAllZooAnimals() {
-        System.out.println();
         System.out.println("Our birdzoo inhabits the following birds:");
         for (int i = 0; i < cockatiels.length; i++) {
             System.out.println("Species: Cockatiel"  + ";  name: " + cockatiels[i].getName() + ";  sex: " + cockatiels[i].getSex() + ";  weight: " + cockatiels[i].getWeight());

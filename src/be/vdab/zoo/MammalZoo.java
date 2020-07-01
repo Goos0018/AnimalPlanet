@@ -75,7 +75,6 @@ public class MammalZoo extends Zoo {
 
     @Override
     public void printAllZooAnimals() {
-        System.out.println();
         System.out.println("Our mammalzoo inhabits the following mammals:");
         for (int i = 0; i < tigers.length; i++) {
             System.out.println("Species: Tiger"  + ";  name: " + tigers[i].getName() + ";  sex: " + tigers[i].getSex() + ";  weight: " + tigers[i].getWeight());
